@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Generator</title>
+    <link rel="stylesheet" href="Styles/master.css">
+    <link rel="icon" href="Images/secure.png">
+</head>
+
+<body>
+    <form class="pass-form">
+        <h2>YOUR PASSWORD:
+            <p class="shadow-box">
+                <label class="passtxt">********</label>
+                <input type="button" class="copyButton" value="Copy To Clipboard">
+            </p>
+        </h2>
+        <div class="options">
+            <span class="alltxt">
+                <label>Length <span class="length-txt">8</span></label>
+                <label>Include Digits</label>
+                <label>Include Capital Letters</label>
+                <label>Include Symbols</label>
+            </span>
+            <span class="buttons">
+                <input type="range" min="2" max="16" value="8" name="" class="range-length">
+                <input type="checkbox" class="check-box checkbox-digits">
+                <input type="checkbox" class="check-box checkbox-capital-letters">
+                <input type="checkbox" class="check-box checkbox-special-letters">
+            </span>
+        </div>
+        <input type="submit" class="submit" value="I WANT MY PASS!">
+    </form>
+    <script src="JS/passGenJS.js"></script>
+</body>
+</html>

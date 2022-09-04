@@ -1,0 +1,203 @@
+body{
+    background-color: #052437;
+    padding: 0;
+    text-align: center;
+    color: #1363DF;
+    font-family: Trebuchet MS;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 35px 0 15px 0;
+    font-size: 40px;
+}
+
+.shadow-box{
+    margin-top: 12px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background-color: #0b3750;
+    width: 88%;
+    height: 50px;
+}
+
+.passtxt {
+    position: relative;
+    top: 4px;
+    color: #00e1ff;
+    font-family: monospace;
+}
+
+.pass-form {
+    margin: 50px auto 0 auto;
+    padding: 10px 0;
+    background-color: #092e43;
+    height: 70%;
+    width: 50%;
+    border-color: #092e43;
+    border-radius: 50px;
+}
+
+.copyButton {
+    display: none;
+    margin: 9px auto 0 auto;
+    background: linear-gradient(to right,#003a95 ,#301379);
+    background-color: #003a95;
+    color: #b6dce9;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    border: 0px solid #000;
+    border-radius: 21px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyButton:hover{
+    background: linear-gradient(to right,#00378d ,#2e1273);
+    background-color: #00378d;
+}
+.copyButton:active{
+    transform: scale(0.95);
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+}
+
+.alltxt{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.check-box {
+    position: relative;
+    left: 50px;
+    height: 20px;
+    width: 20px;
+}
+
+.range-length {
+    height: 10%;
+    width: 100%;
+}
+
+.length-txt {
+    position: relative;
+    left: 95%;
+    bottom: 5px;
+    font-size: 22px;
+}
+
+.submit{
+    margin-top: 55px;
+    margin-bottom: 70px;
+    background: linear-gradient(to right,#003a95 ,#301379);
+    background-color: #003a95;
+    color: #b6dce9;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 23px;
+    border: 0px solid #000;
+    border-radius: 21px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit:hover{
+    background: linear-gradient(to right,#00378d ,#2e1273);
+    background-color: #00378d;
+}
+.submit:active{
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 30px; 
+        margin: 28px 0 15px 0;
+    }
+    .shadow-box{
+        margin-top: 8px;
+    }
+    .passtxt {
+        position: relative;
+        top: 8px;
+        font-size: 25px;
+    }
+    .pass-form {
+        width: 85%;
+        height: 100%;
+    }
+    .copyButton {
+        font-size: 15px;
+        margin: 25px auto 0 auto;
+    }
+    .alltxt{
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    .length-txt {
+        position: relative;
+        left: 65%;
+        top: 1px;
+        font-size: 18px;
+    }
+    .range-length {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 601px) {
+    h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .passtxt {
+        position: relative;
+        bottom: 2px;
+        font-size: 35px;
+    }
+    .pass-form {
+        width: 67%;
+        height: 90%;
+    }
+    .copyButton {
+        font-size: 16px;
+    }
+    .alltxt{
+        font-size: 22px;
+        margin-left: 25px;
+    }
+    .length-txt {
+        position: relative;
+        left: 65%;
+        top: 0.3px;
+        font-size: 22px;
+    }
+    .range-length {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1001px) {
+    .length-txt {
+        position: relative;
+        left: 75%;
+    }
+}
