@@ -6,6 +6,7 @@ const lengthText = document.querySelector('.length-txt');
 const asteriskEffect = () => {
     passtxt.textContent = '*'.repeat(length.value);
     copyButton.style.display = 'none';
+    copyButton.setAttribute('value', 'Copy To Clipboard');
 };
 
 length.addEventListener('touchmove', (e) => {
@@ -67,7 +68,7 @@ const clickSound = new Audio('Sounds/clickSound.mp3');
 const clipBoardButt = () => {
     clickSound.play();
     navigator.clipboard.writeText(passtxt.textContent);
-    alert("Your Password has been copied to clipboard");
+    copyButton.setAttribute('value', '   Copied!   ');
 };
 
 copyButton.addEventListener('click', clipBoardButt);
